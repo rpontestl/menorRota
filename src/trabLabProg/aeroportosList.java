@@ -6,7 +6,7 @@ import java.util.*;
 
 public class aeroportosList {
 
-    Map<String,aeroporto> listaAeroportos = new HashMap<String,aeroporto>();
+    Map<String,aeroporto> listaAeroportos = new HashMap<>();
 
     public aeroportosList(String nomeArquivo){
         File file = new File(nomeArquivo);
@@ -40,15 +40,25 @@ public class aeroportosList {
         rota[0] = aeroOrigem;
         rota[1] = aeroDestino;
         rota[2] = aeroOrigem +"-"+ aeroDestino;
-        rota[3] = "14222222.1";
+        rota[3] = String.valueOf((listaAeroportos.get(aeroOrigem)).distanciaDiretaEntreAeroportos(listaAeroportos.get(aeroDestino)));
         return rota;
     }
     public aeroporto getAeroporto(String sigla){
-        return listaAeroportos.get(sigla);
+        return this.listaAeroportos.get(sigla);
     }
+    public void setAdjacencias(){
+        for (aeroporto y: listaAeroportos.values()) {
+            for(aeroporto x: listaAeroportos.values()){
+                if(x!= y){
+                    y.addNovaAdjacencia(x);
+                }
+            }
+        }
+    };
     public void imprimir(){
         System.out.print("\nSigla            Cidade                      Estado\n");
         System.out.print("-------------------------------------------------------\n");
+
         for(aeroporto obj : listaAeroportos.values()){
             System.out.printf("%s               ",obj.getSigla());
             String s = obj.getCidade();

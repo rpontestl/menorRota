@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="inicio integração">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="integracao com o banco de dados">
+      <change afterPath="$PROJECT_DIR$/src/trabLabProg/grafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menorRota.iml" beforeDir="false" afterPath="$PROJECT_DIR$/menorRota.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/consulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/planilhaAeroportos" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/planilhaAeroportos" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661168625306</updated>
     </task>
+    <task id="LOCAL-00001" summary="integracao com o banco de dados">
+      <created>1661351849120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661351849120</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,17 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicio integração" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio integração" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/trabLabProg/banco.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="integracao com o banco de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="integracao com o banco de dados" />
   </component>
 </project>

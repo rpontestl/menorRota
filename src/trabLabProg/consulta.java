@@ -8,7 +8,7 @@ public class consulta {
         Scanner input = new Scanner(System.in);
         banco bancoDados = new banco();
         aeroportosList lista = new aeroportosList("/home/rafaelpontes/IdeaProjects/menorRota/src/trabLabProg/planilhaAeroportos");
-
+        lista.setAdjacencias(); //Construindo lista de adjacencias de cada aeroporto.
         //Loop do sistema
         while(true){
             Integer opcao;
