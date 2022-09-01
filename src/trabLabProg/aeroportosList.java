@@ -23,7 +23,6 @@ public class aeroportosList {
                 aeroporto novoAeroporto = new aeroporto(palavras[3],palavras[4],palavras[5],palavras[1],palavras[6],palavras[7]);
                 listaAeroportos.put(palavras[1],novoAeroporto);
             }
-
         }
         catch (IOException e){
             System.out.print(e.getMessage());
@@ -39,22 +38,11 @@ public class aeroportosList {
         String rota[] = new String[4];
         rota[0] = aeroOrigem;
         rota[1] = aeroDestino;
-        rota[2] = aeroOrigem +"-"+ aeroDestino;
-        rota[3] = String.valueOf((listaAeroportos.get(aeroOrigem)).distanciaDiretaEntreAeroportos(listaAeroportos.get(aeroDestino)));
+        dijkstra grafo = new dijkstra(this.listaAeroportos);
+        rota[2] = grafo.caminhoDijkstra(aeroOrigem,aeroDestino);
+        rota[3] = String.valueOf(grafo.getDistance(aeroOrigem,aeroDestino));
         return rota;
     }
-    public aeroporto getAeroporto(String sigla){
-        return this.listaAeroportos.get(sigla);
-    }
-    public void setAdjacencias(){
-        for (aeroporto y: listaAeroportos.values()) {
-            for(aeroporto x: listaAeroportos.values()){
-                if(x!= y){
-                    y.addNovaAdjacencia(x);
-                }
-            }
-        }
-    };
     public void imprimir(){
         System.out.print("\nSigla            Cidade                      Estado\n");
         System.out.print("-------------------------------------------------------\n");

@@ -1,10 +1,5 @@
 package trabLabProg;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class aeroporto {
     private String nome;
     private String cidade;
@@ -13,7 +8,7 @@ public class aeroporto {
     private double longitude;
     private double latitude;
 
-    public Map<String,Integer> adjacencias = new HashMap<>();
+    //public Map<String,Integer> adjacencias = new HashMap<>();
     public aeroporto(String Nome, String Cidade , String Estado, String Sigla, String Latitude, String Longitude){
         this.nome = Nome;
         this.cidade = Cidade;
@@ -21,14 +16,6 @@ public class aeroporto {
         this.sigla = Sigla;
         this.longitude = Math.toRadians(Double.valueOf(Longitude).doubleValue());
         this.latitude = Math.toRadians(Double.valueOf(Latitude).doubleValue());
-    }
-    public aeroporto(aeroporto p){
-        this.nome = p.nome;
-        this.cidade = p.cidade;
-        this.estado = p.estado;
-        this.sigla = p.sigla;
-        this.longitude = p.longitude;
-        this.latitude = p.latitude;
     }
     public String getNome(){
         return nome;
@@ -57,8 +44,8 @@ public class aeroporto {
 
         return distancia;
     }
-    public void addNovaAdjacencia(aeroporto destino){
+    /*public void addNovaAdjacencia(aeroporto destino){
         int dist = this.distanciaDiretaEntreAeroportos(destino);
         adjacencias.put(destino.sigla,dist);
-    }
+    }*/
 }

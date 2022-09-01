@@ -3,12 +3,12 @@ package trabLabProg;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class consulta {
+public class Main {
     public static void main(String[] args) throws SQLException {
         Scanner input = new Scanner(System.in);
         banco bancoDados = new banco();
         aeroportosList lista = new aeroportosList("/home/rafaelpontes/IdeaProjects/menorRota/src/trabLabProg/planilhaAeroportos");
-        lista.setAdjacencias(); //Construindo lista de adjacencias de cada aeroporto.
+
         //Loop do sistema
         while(true){
             Integer opcao;
@@ -50,7 +50,7 @@ public class consulta {
 
                     String rotaCompleta[] = lista.calcularRota(nomeOrigem, nomeDestino);
 
-                    //salvar no banco de dados a rota calculada
+                    //salvar no banco de dados a rota calculad
                     bancoDados.salvar(rotaCompleta);
                     System.out.printf("\nMelhor rota: %s, distancia %s\n", rotaCompleta[2],rotaCompleta[3]);
                 }
