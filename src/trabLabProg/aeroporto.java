@@ -17,9 +17,7 @@ public class aeroporto {
         this.longitude = Math.toRadians(Double.valueOf(Longitude).doubleValue());
         this.latitude = Math.toRadians(Double.valueOf(Latitude).doubleValue());
     }
-    public String getNome(){
-        return nome;
-    }
+
     public String getCidade(){
         return cidade;
     }
@@ -29,12 +27,7 @@ public class aeroporto {
     public String getSigla(){
         return sigla;
     }
-    public double getLatitude() {
-        return latitude;
-    }
-    public double getLongitude() {
-        return longitude;
-    }
+
 
     public int distanciaDiretaEntreAeroportos(aeroporto destino){
         int distancia;
@@ -44,8 +37,4 @@ public class aeroporto {
 
         return distancia;
     }
-    /*public void addNovaAdjacencia(aeroporto destino){
-        int dist = this.distanciaDiretaEntreAeroportos(destino);
-        adjacencias.put(destino.sigla,dist);
-    }*/
 }

@@ -1,7 +1,5 @@
 package trabLabProg;
 
-import com.mysql.cj.conf.ConnectionUrlParser;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
@@ -31,7 +29,6 @@ public class dijkstra {
     }
 
     public String caminhoDijkstra(String origin, String end){
-        System.out.println(adj_list.get(origin).get(end));
         for(String name:adj_list.keySet()){
             dist.put(name,Integer.MAX_VALUE);
             father.put(name,origin);
@@ -52,7 +49,7 @@ public class dijkstra {
                 if(dist.get(x) > dist.get(u) + w){
                     father.replace(x,father.get(x),u);
                     dist.replace(x,dist.get(x),dist.get(u)+w);
-                    pqueue.add(new Node(x,-dist.get(x)));
+                    pqueue.add(new Node(x,dist.get(x)));
                 }
             }
         }
@@ -60,15 +57,15 @@ public class dijkstra {
         return recoverPath(end);
     }
 
-    public int getDistance(String origin, String fim){
+    public int getDistance(String fim){
         return dist.get(fim);
     }
     private String recoverPath(String end){
         String aux = end;
         String roat=aux;
         aux = father.get(aux);
-        while(aux != ""){
-            roat = aux+"-"+roat;
+        while(!aux.equals("")){
+            roat = aux+" > "+roat;
             aux = father.get(aux);
         }
         return roat;

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="calculo das distancias ok">
-      <change afterPath="$PROJECT_DIR$/src/trabLabProg/Node.java" afterDir="false" />
+    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="&#10;implementação do dijkstra">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabLabProg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabLabProg/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabLabProg/banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabLabProg/dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/dijkstra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/rafaelpontes/IdeaProjects/LabProg2/out/production/LabProg2/imprimindoGenerico.class",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rafaelpontes/IdeaProjects/LabProg2/out/production/LabProg2/imprimindoGenerico.class&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661540967651</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&#10;implementação do dijkstra">
+      <created>1662048910763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662048910763</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,7 +94,8 @@
     <MESSAGE value="inicio integração" />
     <MESSAGE value="integracao com o banco de dados" />
     <MESSAGE value="calculo das distancias ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculo das distancias ok" />
+    <MESSAGE value="&#10;implementação do dijkstra" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;implementação do dijkstra" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
