@@ -59,8 +59,8 @@ public class Main {
                     String[] rotaCompleta = bancoDados.calcularRota(nomeOrigem, nomeDestino);
 
                     //salvar no banco de dados a rota calculad
-                    bancoDados.salvar(rotaCompleta);
-                    System.out.printf("\nMelhor rota: %s, distancia %s Km\n", rotaCompleta[2],rotaCompleta[3]);
+                    bancoDados.salvar(nomeOrigem,nomeDestino,rotaCompleta);
+                    System.out.printf("\nMelhor rota: %s, distancia %s Km\n", rotaCompleta[0],rotaCompleta[1]);
                 }
             }
         }

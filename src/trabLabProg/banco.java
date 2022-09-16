@@ -35,7 +35,7 @@ public class banco
             System.err.println(e.getMessage());
         }
     }
-    public void salvar(String trajeto[]) throws SQLException {
+    public void salvar(String origem, String destino, String trajeto[]) throws SQLException {
         String query = " insert into listaConsultas (origem, destino, rota, distancia, horario, dia)"
                 + " values (?, ?, ?, ?, ?, ?)";
         Calendar calendar = Calendar.getInstance();
@@ -44,10 +44,10 @@ public class banco
 
         // criando o mysql insert preparedstatement
         PreparedStatement preparedStmt = con.prepareStatement(query);
-        preparedStmt.setString (1, trajeto[0]);
-        preparedStmt.setString (2, trajeto[1]);
-        preparedStmt.setString (3, trajeto[2]);
-        preparedStmt.setInt  (4,Integer.parseInt(trajeto[3]));
+        preparedStmt.setString (1, origem);
+        preparedStmt.setString (2, destino);
+        preparedStmt.setString (3, trajeto[0]);
+        preparedStmt.setInt  (4,Integer.parseInt(trajeto[1]));
         preparedStmt.setTime(5, startTime);
         preparedStmt.setDate   (6, startDate);
 
@@ -60,12 +60,10 @@ public class banco
     }
 
     public String[] calcularRota(String aeroOrigem, String aeroDestino ){
-        String[] rota = new String[4];
-        rota[0] = aeroOrigem;
-        rota[1] = aeroDestino;
+        String[] rota = new String[2];
         dijkstra grafo = new dijkstra(this.listaAeroportos);
-        rota[2] = grafo.caminhoDijkstra(aeroOrigem,aeroDestino);
-        rota[3] = String.valueOf(grafo.getDistance(aeroDestino));
+        rota[0] = grafo.caminhoDijkstra(aeroOrigem,aeroDestino);
+        rota[1] = String.valueOf(grafo.getDistance(aeroDestino));
         return rota;
     }
     public void imprimir(){

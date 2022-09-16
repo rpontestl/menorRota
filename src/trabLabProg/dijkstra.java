@@ -6,7 +6,6 @@ import java.util.PriorityQueue;
 
 public class dijkstra {
     Map<String,String> father;
-
     Map<String,Integer> dist;
     PriorityQueue<Node> pqueue;
     Map<String,Map<String,Integer>> adj_list;
@@ -40,7 +39,7 @@ public class dijkstra {
         pqueue.add(new Node(origin,0));
 
         while(!pqueue.isEmpty()){
-            int ud = - pqueue.peek().cost;
+            int ud =  pqueue.peek().cost;
             String u = pqueue.peek().name;
             pqueue.remove();
             if(dist.get(u) < ud) continue;
