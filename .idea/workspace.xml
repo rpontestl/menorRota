@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="&#10;implementação do dijkstra">
+    <list default="true" id="747b4432-1ede-4f73-a183-b0f979ba110b" name="Changes" comment="fim?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/aeroporto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/aeroportosList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trabLabProg/banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trabLabProg/dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trabLabProg/dijkstra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662048910763</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fim?">
+      <created>1662422216343</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662422216343</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,7 +98,8 @@
     <MESSAGE value="integracao com o banco de dados" />
     <MESSAGE value="calculo das distancias ok" />
     <MESSAGE value="&#10;implementação do dijkstra" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;implementação do dijkstra" />
+    <MESSAGE value="fim?" />
+    <option name="LAST_COMMIT_MESSAGE" value="fim?" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

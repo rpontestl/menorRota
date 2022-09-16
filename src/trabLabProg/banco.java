@@ -47,7 +47,7 @@ public class banco
         preparedStmt.setString (1, trajeto[0]);
         preparedStmt.setString (2, trajeto[1]);
         preparedStmt.setString (3, trajeto[2]);
-        preparedStmt.setFloat  (4,Integer.valueOf(trajeto[3]));
+        preparedStmt.setInt  (4,Integer.parseInt(trajeto[3]));
         preparedStmt.setTime(5, startTime);
         preparedStmt.setDate   (6, startDate);
 
@@ -69,15 +69,15 @@ public class banco
         return rota;
     }
     public void imprimir(){
-        System.out.print("\nSigla            Cidade                      Estado\n");
-        System.out.print("-------------------------------------------------------\n");
+        StringBuilder ans;
+        System.out.print("\nSigla           | Município                   | Estado\n");
+        System.out.print("----------------------------------------------------------------\n");
 
         for(aeroporto obj : listaAeroportos.values()){
-            System.out.printf("%s              ",obj.getSigla());
-            String s = obj.getCidade();
-            System.out.printf("%s",s);
-            for(int j = s.length(); j < 28 ; j++) System.out.print(" ");
-            System.out.printf("%s\n",obj.getEstado());
+                ans = new StringBuilder(obj.getSigla() + "             | " + obj.getCidade());
+                for(int j = obj.getCidade().length(); j < 28 ; j++) ans.append(" ");//System.out.print(" ");
+                ans.append("| "+obj.getEstado());
+                System.out.printf("%s\n", ans.toString());
         }
         System.out.print("\n\n");
     }

@@ -1,5 +1,6 @@
 package trabLabProg;
 
+import java.nio.Buffer;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -15,8 +16,8 @@ public class Main {
 
             //menu principal
             do{
-                System.out.print("\nQual acao deseja realizar? \n[1]Simular rota [2]Consultar aeroportos [3]Sair\n");
-                opcao = input.next();
+                System.out.print("\nQual açâo deseja realizar? \n[1]Simular rota [2]Consultar aeroportos [3]Sair\n");
+                opcao = input.nextLine();
             }while(!((opcao.equals("1"))||(opcao.equals("2"))|| (opcao.equals("3"))));
 
             //Sair
@@ -30,27 +31,29 @@ public class Main {
             else{
                 //menu secundário
                 do{
-                    System.out.print("Qual acao deseja realizar? \n[1]Escolher origem [2]Consultar aeroportos [3]Voltar para o menu\n");
-                    opcao = input.next();
+                    System.out.print("Qual ação deseja realizar? \n[1]Escolher origem [2]Consultar aeroportos [3]Voltar para o menu\n");
+                    opcao = input.nextLine();
                 }while(!((opcao.equals("1"))||(opcao.equals("2"))|| (opcao.equals("3"))));
 
                 //Voltar ao loop principal
                 if(opcao.equals("3"));
 
                 //imprimir lista de aeroportos
-                else if(opcao.equals("2")) bancoDados.imprimir();
+                else if(opcao.equals("2")){
+                    bancoDados.imprimir();
+                }
 
                 //forcecer nome dos aeroportos
                 else{
                     String nomeOrigem, nomeDestino;
                     do{
                         System.out.print("Digite a sigla do aeroporto de origem: ");
-                        nomeOrigem = input.next();
+                        nomeOrigem = input.nextLine();
                     }while(bancoDados.isNotAnAirport(nomeOrigem));
 
                     do{
                         System.out.print("\nDigite a sigla do aeroporto de destino: ");
-                        nomeDestino = input.next();
+                        nomeDestino = input.nextLine();
                     }while(bancoDados.isNotAnAirport(nomeDestino));
 
                     String[] rotaCompleta = bancoDados.calcularRota(nomeOrigem, nomeDestino);
